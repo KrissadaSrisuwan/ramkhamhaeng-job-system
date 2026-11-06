@@ -1,0 +1,119 @@
+# =============================================================================
+# Root .gitignore for Ramkhamhaeng Part-Time Job System
+# Full-Stack Monorepo: Spring Boot (Backend) + React Vite (Frontend)
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Operating System Files
+# -----------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# -----------------------------------------------------------------------------
+# IDE & Editor Settings
+# -----------------------------------------------------------------------------
+# IntelliJ IDEA
+.idea/
+**/.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Visual Studio Code
+.vscode/
+**/.vscode/
+*.code-workspace
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Eclipse & Spring Tool Suite (STS)
+.classpath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+.apt_generated/
+.factorypath
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# -----------------------------------------------------------------------------
+# Backend: Java / Spring Boot / Maven
+# -----------------------------------------------------------------------------
+target/
+**/target/
+*.class
+
+# Compiled archives (exclude jar/war, but allow maven-wrapper.jar)
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+!backend/.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# Log & Crash Reports
+*.log
+logs/
+**/logs/
+hs_err_pid*
+replay_pid*
+
+# User Uploaded Content (Keep directory structure with .gitkeep)
+backend/uploads/*
+!backend/uploads/.gitkeep
+!backend/uploads/profile/
+backend/uploads/profile/*
+!backend/uploads/profile/.gitkeep
+
+# -----------------------------------------------------------------------------
+# Frontend: Node.js / React / Vite
+# -----------------------------------------------------------------------------
+node_modules/
+**/node_modules/
+frontend/dist/
+**/dist/
+frontend/dist-ssr/
+**/dist-ssr/
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Vite cache & temp
+.vite/
+**/.vite/
+.vite-temp/
+**/.vite-temp/
+
+# Environment Variables & Local Secrets
+.env
+.env.local
+.env.*.local
+*.local
+
+# Temporary / testing files
+*.tmp
+*.bak
+capture_screenshots.js

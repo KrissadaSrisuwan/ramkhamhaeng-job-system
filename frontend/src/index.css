@@ -1,0 +1,41 @@
+/* ===== Google Font: Noto Sans Thai & Inter ===== */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap");
+
+/* ===== Tailwind CSS ===== */
+@import "tailwindcss";
+
+/* ===== Theme Customization: Ramkhamhaeng University Official Identity ===== */
+@theme {
+  --font-sans: "Noto Sans Thai", "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Ramkhamhaeng Navy & Gold */
+  --color-primary: #0B1953;
+  --color-primary-dark: #071038;
+  --color-primary-light: #1D357F;
+  --color-ru-gold: #D4AF37;
+  --color-ru-gold-dark: #B8860B;
+  --color-ru-gold-light: #F6E05E;
+
+  --color-dark: #0A1338;
+  --color-deep-dark: #060B24;
+}
+
+/* ===== Global Reset & Defaults ===== */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background-color: #f8fafc;
+  color: #1e293b;
+  -webkit-font-smoothing: antialiased;
+}
